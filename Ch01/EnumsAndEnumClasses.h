@@ -7,34 +7,34 @@
 
 enum OptionType
 {
-  European, // default integer value = 0
-  American, // default integer value = 1
-  Bermudan, // default integer value = 2
-  Asian     // default integer value = 3
+  European,
+  American,
+  Bermudan,
+  Asian
 };
 
 enum Baseball
 {
-  Pitcher,        // 0
-  Catcher,        // 1
-  First_Baseman,  // 2
-  Second_Baseman, // 3
-  Third_Baseman,  // 4
-  Shortstop,      // 5
-  Left_Field,     // 6
-  Center_Field,   // 7
-  Right_Field     // 8
+  Pitcher,
+  Catcher,
+  First_Baseman,
+  Second_Baseman,
+  Third_Baseman,
+  Shortstop,
+  Left_Field,
+  Center_Field,
+  Right_Field
 };
 
 enum Football
 {
-  Defensive_Tackle, // 0
-  Edge_Rusher,      // 1
-  Defensive_End,    // 2
-  Linebacker,       // 3
-  Cornerback,       // 4
-  Strong_Safety,    // 5
-  Weak_Safety       // 6
+  Defensive_Tackle,
+  Edge_Rusher,
+  Defensive_End,
+  Linebacker,
+  Cornerback,
+  Strong_Safety,
+  Weak_Safety
 };
 
 enum class Bond_Type

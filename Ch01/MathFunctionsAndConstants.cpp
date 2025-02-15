@@ -1,5 +1,7 @@
 #include "Declarations.h"
 
+// Use #include <cmath> and scope math functions with std::.
+
 #include <cmath>
 #include <format>
 #include <iostream>
@@ -8,31 +10,30 @@
 void
 math_functions_and_constants ()
 {
-  using std::cout, std::format;
+  using std::cout, std::format, std::endl;
 
-  cout << "\n***** math_functions_and_constants() ***** (top calling "
-          "function)\n";
+  cout << "\n=== math_functions_and_constants() === (top calling function)" << endl;
 
-  // Examples using functions that follow:
-  cout << "\n\n*** trig_fcn(.) ***\n";
-  cout << format ("sin({}) + cos({}) = {}\n", std::numbers::pi, std::numbers::pi,
-                  trig_fcn (std::numbers::pi, std::numbers::pi));
+  cout << "\n=== trig_fcn(.) ===" << endl;
+  cout << format ("sin({}) + cos({}) = {}", std::numbers::pi, std::numbers::pi,
+                  trig_fcn (std::numbers::pi, std::numbers::pi))
+       << endl;
 
-  cout << "\n*** zero_coupon_bond(.) ***\n";
-  cout << format ("zero_coupon_bond({}, {}, {}) = {}\n", 1000.0, 0.06, 0.05, zero_coupon_bond (1000.0, 0.06, 0.05));
+  cout << "\n=== zero_coupon_bond(.) ===" << endl;
+  cout << format ("zero_coupon_bond({}, {}, {}) = {}", 1000.0, 0.06, 0.05, zero_coupon_bond (1000.0, 0.06, 0.05))
+       << endl;
 
-  cout << "\n*** polynomial using Horner's Method f(.) ***\n";
-  cout << format ("f({}) = {}\n", 1.0, f (1.0));
+  cout << "\n=== polynomial using Horner's Method f(.) ===" << endl;
+  cout << format ("f({}) = {}", 1.0, f (1.0)) << endl;
 
-  cout << "\n*** polynomial using brute force f_pow(.) (version of f(.) using "
-          "std::pow(.)) ***\n";
-  cout << format ("f_pow({}) = {}\n", 1.0, f_pow (1.0));
+  cout << "\n=== polynomial using brute force f_pow(.) (version of f(.) using std::pow(.)) ===" << endl;
+  cout << format ("f_pow({}) = {}", 1.0, f_pow (1.0)) << endl;
 
-  cout << "\n*** real exponent g(.) ***\n";
-  cout << format ("g({}, {}) = {}\n", 1.0, 1.0, g (1.0, 1.0));
+  cout << "\n=== real exponent g(.) ===" << endl;
+  cout << format ("g({}, {}) = {}", 1.0, 1.0, g (1.0, 1.0)) << endl;
 
-  cout << "\n*** C++ mathematical constants math_constant_fcn(.) ***\n";
-  cout << format ("math_constant_fcn({}, {}) = {}\n", 1.0, 1.0, math_constant_fcn (1.0, 1.0));
+  cout << "\n=== C++ mathematical constants math_constant_fcn(.) ===" << endl;
+  cout << format ("\nmath_constant_fcn({}, {}) = {}", 1.0, 1.0, math_constant_fcn (1.0, 1.0)) << endl;
 }
 
 double

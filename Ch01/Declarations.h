@@ -7,7 +7,7 @@
 #include "EnumsAndEnumClasses.h"
 
 // NewFeatures.cpp
-void new_features (); // Top level calling test function
+void new_features ();
 void uniform_initialization_size_t_and_auto ();
 void range_based_for_loop ();
 void typedef_and_using ();
@@ -17,17 +17,17 @@ void std_format_example ();
 void ctad_example ();
 
 // EnumExamples.cpp
-void enum_examples (); // Top level calling test function
+void enum_examples ();
 void enum_const_examples ();
 void enum_class_examples ();
 void switch_statement_scoped_enum (Bond_Type bnd);
 
-void lambda_expressions (); // Top level calling test function
+void lambda_expressions ();
 void hello_world ();
 void more_lambda_examples ();
 
 // MathFunctions and Constants
-void   math_functions_and_constants (); // Top level calling test function
+void   math_functions_and_constants ();
 double trig_fcn (double theta, double phi);
 double zero_coupon_bond (double face_value, double int_rate, double year_fraction);
 double f (double x);
