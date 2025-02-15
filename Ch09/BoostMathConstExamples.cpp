@@ -1,0 +1,27 @@
+/*
+ * This file is licensed under the Mozilla Public License, v. 2.0.
+ * You can obtain a copy of the license at http://mozilla.org/MPL/2.0/.
+ */
+
+#include "ExampleDeclarations.h"
+
+#include <boost/math/constants/constants.hpp>
+
+#include <format>
+#include <iostream>
+using std::cout;
+using std::format;
+
+void
+boost_math_const_examples ()
+{
+  cout << "*** boost_math_const_examples() ***\n";
+
+  auto std_norm_pdf = [] (double x) -> double {
+    return boost::math::double_constants::one_div_root_two_pi * std::exp (-boost::math::double_constants::half * x * x);
+  };
+
+  double y = std_norm_pdf (0.0);
+
+  cout << format ("Std Norm pdf f({}) = {}", 0, y) << "\n\n";
+}
